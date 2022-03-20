@@ -1,0 +1,19 @@
+.component {
+  .logo {
+    margin-right: 15vw;
+  }
+  .topbar {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+  }
+  .navbarDesktop {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-left: 4vw;
+    }
+  }
+}
