@@ -1,5 +1,30 @@
 .component {
-  .browsers {
+  .downloadText {
+    text-align: center;
+    margin: 5vh 30vw;
+    
+    h2 {
+      margin: 2vh;
+    }
+  }
+  .browsersContainer {
     display: flex;
+    justify-content: center;
+    
+    .browser {
+      display: flex;
+      flex-direction: column;
+      margin: 2vw;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;  
+      height: 40vh;
+      border-radius: 8px;
+    }
+    .browserLogo, button, p {
+      margin: 2vh 0;
+    }
+    button {
+      padding: 1vw 2vw;
+    }
   }
 }
