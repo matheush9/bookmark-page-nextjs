@@ -34,6 +34,4 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 =======
-# clima-nextjs
-App de clima melhorado usando NextJS e Scss
->>>>>>> 32a05a78ad842e9bb11a74d62ac2b6064021e3bf
+
