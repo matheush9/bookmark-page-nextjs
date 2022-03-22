@@ -14,11 +14,12 @@ export default function Hero() {
           <button>Get it on Firefox</button>
         </div>
       </div>
-
-      <div className={styles.heroImg}>
-        <img src="/images/illustration-hero.svg" alt="" />
-      </div>
-      <div className={styles.blueBg}>
+      
+      <div className={styles.container}>
+        <div className={styles.heroImg}>
+          <img src="/images/illustration-hero.svg" alt="" />
+        </div>
+        <div className={styles.blueBg}></div>
       </div>
     </div>
   );
