@@ -3,13 +3,13 @@ import styles from "./hero.module.scss";
 export default function Hero() {
   return (
     <div className={styles.component}>
-      <div>
+      <div className={styles.simpleBook}>
         <h1>A Simple BookMark Manager</h1>
         <p>
           A simple and clean interface to organize your favorite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
-        <div>
+        <div className={styles.btns}>
           <button>Get it on Chrome</button>
           <button>Get it on Firefox</button>
         </div>
