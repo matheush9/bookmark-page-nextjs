@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import Extension from "../components/Extension";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Topbar from "../components/Topbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <Topbar />
       <Hero />
       <Features />
+      <Extension />
     </div>
   )
 }
