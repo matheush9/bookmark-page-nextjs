@@ -12,7 +12,7 @@ export default function Topbar() {
           <p>FEATURES</p>
           <p>PRICING</p>
           <p>CONTACT</p>
-          <p className={styles.login}>LOGIN</p>
+          <button>LOGIN</button>
         </div>
       </div>
     </div>

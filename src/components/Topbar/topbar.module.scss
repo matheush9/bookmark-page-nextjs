@@ -1,19 +1,29 @@
+@import "/src/styles/cores.scss";
 .component {
   .logo {
     margin-right: 15vw;
+    align-self: center;
   }
   .topbar {
     margin-top: 5vh;
     display: flex;
     justify-content: space-around;
     font-size: 1rem;
+
   }
   .navbarDesktop {
     display: flex;
     align-items: center;
 
     p {
-      margin-left: 4vw;
+      margin-right: 4vw;
+      color: $dark-blue;
+    }
+    
+    button {
+      background-color: $soft-red;
+      font-weight: 500;
+      padding: 1vw 3vw;
     }
   }
 }
