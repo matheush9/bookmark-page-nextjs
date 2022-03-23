@@ -16,12 +16,13 @@ h1,h2,h3 {
   color: $dark-blue;
   font-weight: 500;
 }
-
+h2 {
+  font-size: 2rem;
+}
 p {
   color: $grayish-blue;
   line-height: 1.5rem;
 }
-
 button {
   padding: 1vw 2vw;
   border: none;

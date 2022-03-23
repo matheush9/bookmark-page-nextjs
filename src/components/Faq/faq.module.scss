@@ -1,0 +1,46 @@
+@import "/src/styles/cores.scss";
+
+.component {
+  .faqText {
+    text-align: center;
+    padding: 0 30vw;
+
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      margin: 2vh 0;
+      margin-bottom: 6vh;
+    }
+  }
+  .questions {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 30vw;
+
+    .question {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgb(209, 206, 206);
+
+      &:first-child {
+        border-top: 1px solid rgb(209, 206, 206);
+      }
+    }
+
+    h3 {
+      margin: 3vh 0vh;
+      font-weight: 400;
+    }
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 0;
+  }
+}
