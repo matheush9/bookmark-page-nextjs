@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { useState } from "react";
+import Contact from "../components/Contact";
 import Extension from "../components/Extension";
 import Faq from "../components/Faq";
 import Features from "../components/Features";
@@ -16,6 +17,7 @@ export default function Home() {
       <Features />
       <Extension />
       <Faq />
+      <Contact />
     </div>
   )
 }
