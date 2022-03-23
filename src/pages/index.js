@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import Extension from "../components/Extension";
+import Faq from "../components/Faq";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Topbar from "../components/Topbar";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Extension />
+      <Faq />
     </div>
   )
 }
