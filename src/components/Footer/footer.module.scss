@@ -1,0 +1,32 @@
+@import "/src/styles/cores.scss";
+.component {
+  background-color: $dark-blue;
+  padding: 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  h3 {
+    color: white;
+    margin-right: 4vw;
+    font-weight: 500;
+  }
+  .footer {
+    display: flex;
+    font-size: 1rem;
+    margin-left: 10vw;
+  }
+  .navbarDesktop {
+    display: flex;
+
+    p {
+      margin-right: 4vw;
+      color: white;
+    }
+    
+    button {
+      background-color: $soft-red;
+      font-weight: 500;
+      padding: 1vw 3vw;
+    }
+  }
+}
