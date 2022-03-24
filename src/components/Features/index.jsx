@@ -26,7 +26,7 @@ export default function Features() {
       </div>
 
       <div className={styles.features}>
-        
+
         <div className={styles.simple}>
           <div className={styles.container}>
             <div>
@@ -35,7 +35,7 @@ export default function Features() {
             <div className={styles.blueBg}></div>
           </div>
           
-          <div className="styles.text">
+          <div className={styles.text}>
             <h3>Bookmark in one click</h3>
             <p>
               Organize your bookmarks however you like. Our simple drag-and-drop

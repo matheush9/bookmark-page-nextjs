@@ -22,18 +22,37 @@
   }
 
   .features {
+    margin-bottom: 30vh;
+    margin-top: 15vh;
 
     .simple {
-      display: flex;
+      display: none;
+
+      .container {
+        position: relative;
+        
+        img {
+          width: 40vw;
+          margin-left: 8vw;
+        }
+      }
 
       .text {
-        display: flex;
-        flex-direction: column;
+        padding: 0 10vw;
+        margin: 8vh 0;
+        
+        h3 {
+          font-size: 1.6rem;
+        }
+        p {
+          margin: 4vh 0;
+        }
       }
+
     }
 
     .speedy {
-      display: none;
+      display: flex;
     }
 
     .easy {
@@ -43,9 +62,12 @@
 
   .blueBg {
     background-color: $soft-blue;
-    width: 50vw;
+    width: 60vw;
     height: 40vh;
+    top: 12vh;
+    left: -20vw;
     border-radius: 150px;
     z-index: -1;
+    position: absolute;
   }
 }
