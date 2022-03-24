@@ -26,7 +26,7 @@
     margin-top: 15vh;
 
     .simple {
-      display: none;
+      display: flex;
 
       .container {
         position: relative;
@@ -34,6 +34,11 @@
         img {
           width: 40vw;
           margin-left: 8vw;
+        }
+
+        .blueBg {
+          top: 12vh;
+          left: -20vw;
         }
       }
 
@@ -52,11 +57,64 @@
     }
 
     .speedy {
-      display: flex;
+      display: none;
+
+      .container {
+        position: relative;
+        
+        img {
+          width: 40vw;
+          margin-left: 8vw;
+        }
+
+        .blueBg {
+          top: 20vh;
+          left: -20vw;
+        }
+      }
+
+      .text {
+        padding: 0 10vw;
+        margin: 8vh 0;
+        
+        h3 {
+          font-size: 1.6rem;
+        }
+        p {
+          margin: 4vh 0;
+        }
+      }
+
     }
 
     .easy {
       display: none;
+
+      .container {
+        position: relative;
+        
+        img {
+          width: 40vw;
+          margin-left: 8vw;
+        }
+
+        .blueBg {
+          top: 20vh;
+          left: -20vw;
+        }
+      }
+
+      .text {
+        padding: 0 10vw;
+        margin: 8vh 0;
+        
+        h3 {
+          font-size: 1.6rem;
+        }
+        p {
+          margin: 4vh 0;
+        }
+      }
     }
   }
 
@@ -64,8 +122,6 @@
     background-color: $soft-blue;
     width: 60vw;
     height: 40vh;
-    top: 12vh;
-    left: -20vw;
     border-radius: 150px;
     z-index: -1;
     position: absolute;

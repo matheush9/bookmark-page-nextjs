@@ -26,7 +26,6 @@ export default function Features() {
       </div>
 
       <div className={styles.features}>
-
         <div className={styles.simple}>
           <div className={styles.container}>
             <div>
@@ -34,7 +33,7 @@ export default function Features() {
             </div>
             <div className={styles.blueBg}></div>
           </div>
-          
+
           <div className={styles.text}>
             <h3>Bookmark in one click</h3>
             <p>
@@ -47,14 +46,36 @@ export default function Features() {
         </div>
 
         <div className={styles.speedy}>
-          <div>
-            <img src="/images/illustration-features-tab-2.svg" alt="" />
+          <div className={styles.container}>
+            <div>
+              <img src="/images/illustration-features-tab-2.svg" alt="" />
+            </div>
+            <div className={styles.blueBg}></div>
+          </div>
+
+          <div className={styles.text}>
+            <h3>Inteligent search</h3>
+            <p>
+              Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks
+            </p>
+            <button>More Info</button>
           </div>
         </div>
 
         <div className={styles.easy}>
-          <div>
-            <img src="/images/illustration-features-tab-3.svg" alt="" />
+          <div className={styles.container}>
+            <div>
+              <img src="/images/illustration-features-tab-3.svg" alt="" />
+            </div>
+            <div className={styles.blueBg}></div>
+          </div>
+
+          <div className={styles.text}>
+            <h3>Share your bookmarks</h3>
+            <p>
+              Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+            </p>
+            <button>More Info</button>
           </div>
         </div>
       </div>
