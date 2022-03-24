@@ -1,5 +1,8 @@
+@import "/src/styles/cores.scss";
+
 .component {
   margin-bottom: 20vh;
+
   .downloadText {
     text-align: center;
     margin: 5vh 30vw;
@@ -8,6 +11,7 @@
       margin: 2vh;
     }
   }
+
   .browsersContainer {
     display: flex;
     justify-content: center;
@@ -17,15 +21,27 @@
       flex-direction: column;
       margin: 2vw;
       align-items: center;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;  
-      height: 40vh;
-      border-radius: 8px;
+      justify-content: center;
+      box-shadow: $grayish-blue 0px 4px 8px;  
+      height: 50vh;
+      border-radius: 15px;
+
+      &:nth-child(2) {
+        margin-top: 8vh;
+      }
+  
+      &:nth-child(3) {
+        margin-top: 14vh;
+      }
+
+      button {
+        padding: 1vw 2vw;
+        margin: 0;
+        margin-top: 4vh;
+      }
     }
-    .browserLogo, button, p {
+    .browserLogo, p {
       margin: 2vh 0;
-    }
-    button {
-      padding: 1vw 2vw;
     }
   }
 }
