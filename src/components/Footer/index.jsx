@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div>
+      <div className={styles.socialLogos}>
         <div>
           <img src="/images/icon-facebook.svg" alt="" />
         </div>

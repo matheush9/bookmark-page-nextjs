@@ -1,32 +1,60 @@
 @import "/src/styles/cores.scss";
+
 .component {
   background-color: $dark-blue;
-  padding: 4vh;
+  padding: 3vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  h3 {
-    color: white;
-    margin-right: 4vw;
-    font-weight: 500;
-  }
+
   .footer {
     display: flex;
+    align-items: center;
     font-size: 1rem;
     margin-left: 10vw;
-  }
-  .navbarDesktop {
-    display: flex;
 
-    p {
-      margin-right: 4vw;
-      color: white;
+    .logo {
+      cursor: pointer;
+
+      h3 {
+        color: white;
+        margin-right: 4vw;
+      }
     }
-    
-    button {
-      background-color: $soft-red;
-      font-weight: 500;
-      padding: 1vw 3vw;
+
+
+    .navbarDesktop {
+      display: flex;
+
+      p {
+        margin-right: 4vw;
+        color: $grayish-blue;
+        font-weight: 500;
+        font-size: 0.8rem;
+        cursor: pointer;
+
+        &:hover {
+          transition: 0.8s;
+          color: $soft-red;
+        }
+      }
+    }
+  }
+
+  .socialLogos {
+    display: flex;
+    margin-right: 4vw;
+    align-items: center;
+
+    img {
+      margin-right: 4vw;
+      cursor: pointer;
+
+      &:hover {
+        transition: 0.8s;
+        filter: invert(69%) sepia(47%) saturate(6186%) hue-rotate(321deg)
+          brightness(93%) contrast(113%);
+      }
     }
   }
 }
