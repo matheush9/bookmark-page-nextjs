@@ -25,10 +25,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid rgb(209, 206, 206);
-
-      &:first-child {
-        border-top: 1px solid rgb(209, 206, 206);
+      border-top: 1px solid rgb(209, 206, 206);
+      &:nth-last-child(2) {
+        border-bottom: 1px solid rgb(209, 206, 206);
       }
     }
 
@@ -48,5 +47,17 @@
     align-items: center;
     justify-content: center;
     margin: 5vh 0;
+  }
+  .displayNone {
+    display: none;
+  }
+  .answer {
+    display: block;
+    padding: 2vw 0;
+  }
+  .rotateArrow {
+    transform: rotate(180deg);
+    filter: invert(69%) sepia(47%) saturate(6186%) hue-rotate(321deg)
+      brightness(93%) contrast(113%);
   }
 }

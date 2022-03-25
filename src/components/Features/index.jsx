@@ -7,7 +7,6 @@ export default function Features() {
   const [stateSpeedy, setStateSpeedy] = useState(false);
   const [stateEasy, setStateEasy] = useState(false);
 
-
   const changeStyleSimple = () => {
     setStateSpeedy(false), setStateEasy(false);
     setStateSimple(true);
@@ -36,21 +35,37 @@ export default function Features() {
 
       <div className={styles.items}>
         <div>
-          <p onClick={changeStyleSimple} className={stateSimple ? styles.pActive :''}> Simple Bookmarking</p>
-          <div className={stateSimple ? styles.wrapper :''}></div>
+          <p
+            onClick={changeStyleSimple}
+            className={stateSimple ? styles.pActive : ""}
+          >
+            {" "}
+            Simple Bookmarking
+          </p>
+          <div className={stateSimple ? styles.wrapper : ""}></div>
         </div>
         <div>
-          <p onClick={changeStyleSpeedy} className={stateSpeedy ? styles.pActive :''}>Speedy Searching</p>
-          <div className={stateSpeedy ? styles.wrapper :''}></div>
+          <p
+            onClick={changeStyleSpeedy}
+            className={stateSpeedy ? styles.pActive : ""}
+          >
+            Speedy Searching
+          </p>
+          <div className={stateSpeedy ? styles.wrapper : ""}></div>
         </div>
         <div>
-          <p onClick={changeStyleEasy} className={stateEasy ? styles.pActive :''}>Easy Sharing</p>
-          <div className={stateEasy ? styles.wrapper :''}></div>
+          <p
+            onClick={changeStyleEasy}
+            className={stateEasy ? styles.pActive : ""}
+          >
+            Easy Sharing
+          </p>
+          <div className={stateEasy ? styles.wrapper : ""}></div>
         </div>
       </div>
 
       <div className={styles.features}>
-        <div className={stateSimple ? styles.simple: styles.displayNone}>
+        <div className={stateSimple ? styles.simple : styles.displayNone}>
           <div className={styles.container}>
             <div>
               <img src="/images/illustration-features-tab-1.svg" alt="" />
