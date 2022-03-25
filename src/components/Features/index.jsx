@@ -1,7 +1,28 @@
+import React, { useState } from "react";
 import styles from "./features.module.scss";
 import Image from "next/image";
 
 export default function Features() {
+  const [stateSimple, setStateSimple] = useState(true);
+  const [stateSpeedy, setStateSpeedy] = useState(false);
+  const [stateEasy, setStateEasy] = useState(false);
+
+
+  const changeStyleSimple = () => {
+    setStateSpeedy(false), setStateEasy(false);
+    setStateSimple(true);
+  };
+
+  const changeStyleSpeedy = () => {
+    setStateEasy(false), setStateSimple(false);
+    setStateSpeedy(true);
+  };
+
+  const changeStyleEasy = () => {
+    setStateSpeedy(false), setStateSimple(false);
+    setStateEasy(true);
+  };
+
   return (
     <div className={styles.component}>
       <div className={styles.featuresText}>
@@ -15,13 +36,16 @@ export default function Features() {
 
       <div className={styles.items}>
         <div>
-          <p>Simple Bookmarking</p>
+          <p onClick={changeStyleSimple} className={stateSimple ? styles.p1 :''}> Simple Bookmarking</p>
+          <div className={stateSimple ? styles.wrapper :''}></div>
         </div>
         <div>
-          <p>Speedy Searching</p>
+          <p onClick={changeStyleSpeedy} className={stateSpeedy ? styles.p1 :''}>Speedy Searching</p>
+          <div className={stateSpeedy ? styles.wrapper :''}></div>
         </div>
         <div>
-          <p>Easy Sharing</p>
+          <p onClick={changeStyleEasy} className={stateEasy ? styles.p1 :''}>Easy Sharing</p>
+          <div className={stateEasy ? styles.wrapper :''}></div>
         </div>
       </div>
 
@@ -56,7 +80,8 @@ export default function Features() {
           <div className={styles.text}>
             <h3>Inteligent search</h3>
             <p>
-              Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks
+              Our powerful search feature will help you find saved sites in no
+              time at all. No need to trawl through all of your bookmarks
             </p>
             <button>More Info</button>
           </div>
@@ -73,7 +98,8 @@ export default function Features() {
           <div className={styles.text}>
             <h3>Share your bookmarks</h3>
             <p>
-              Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.
+              Easily share your bookmarks and collections with others. Create a
+              shareable link that you can send at the click of a button.
             </p>
             <button>More Info</button>
           </div>
