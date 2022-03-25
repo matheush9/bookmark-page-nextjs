@@ -4,9 +4,18 @@
   text-align: center;
   padding: 8vh 30vw;
   .stayUp {
+
     h2, p {
       color: white;
       margin-bottom: 4vh;
+    }
+    button {
+      &:hover {
+        transition: 0.3s;
+        background-color: white;
+        border: 2px solid $soft-red;
+        color: $soft-red;
+      }
     }
   }
   p {
