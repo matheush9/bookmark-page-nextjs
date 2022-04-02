@@ -18,7 +18,7 @@ h1,h2,h3 {
   font-weight: 500;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 p {
   color: $grayish-blue;
@@ -39,5 +39,20 @@ button {
 @media (min-width: 1080px) {
   html {
     font-size: 110%;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 110%;
+  }
+
+  button {
+    padding: 4vw;
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
   }
 }

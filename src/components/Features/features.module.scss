@@ -98,21 +98,31 @@
 
 @media (max-width: 600px) {
   .component {
+    .featuresText {
+      padding: 0 10vw;
+    }
+
     .blueBg {
       transform: rotate(90deg);
       width: 70vw;
       height: 100vw;
     }
-    .features {
 
+    .features {
+      margin: 8vh 0;
       .simple,
       .speedy,
       .easy {
         display: flex;
         flex-direction: column;
+        text-align: center;
 
         .text {
           order: 2;
+        }
+
+        button {
+          display: none;
         }
 
         .container {
@@ -124,12 +134,27 @@
 
           .blueBg {
             transform: rotate(90deg);
-            width: 70vw;
+            width: 60vw;
             height: 100vw;
-            top: -5vw;
+            top: 1vw;
+            left: -10vw;
           }
         }
       }
+
+      .simple:first-child {
+        .blueBg {
+          width: 50vw;
+          top: -5vh;
+          left: -1vw;
+        }
+      }
+    }
+    .items {
+      flex-direction: column;
+      text-align: center;
+      margin: 4vh 15vw;
+      border-bottom: none;
     }
   }
 }

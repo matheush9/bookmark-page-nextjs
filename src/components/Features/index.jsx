@@ -25,7 +25,7 @@ export default function Features() {
   return (
     <div className={styles.component}>
       <div className={styles.featuresText}>
-        <h1>Features</h1>
+        <h2>Features</h2>
         <p>
           Our aim is to make quick and easy for you to acess your favourite
           websites. Your bookmark sync between your devices so you can acess

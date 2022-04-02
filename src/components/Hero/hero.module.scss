@@ -68,14 +68,26 @@
 @media (max-width: 600px) {
   .component {
     flex-direction: column;
+    margin-bottom: 15vh;
 
     .simpleBook {
+      text-align: center;
       order: 2;
+      padding: 8vw;
+      margin-top: 4vh;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      button {
+        margin: 1vh;
+      }
     }
   }
 
   .container {
-    
+
     .heroImg {
       img {
         width: 95vw;
