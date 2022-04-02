@@ -42,7 +42,7 @@
   .features {
     margin-bottom: 30vh;
     margin-top: 15vh;
-    
+
     .simple,
     .speedy,
     .easy {
@@ -93,5 +93,43 @@
     border-radius: 150px;
     z-index: -1;
     position: absolute;
+  }
+}
+
+@media (max-width: 600px) {
+  .component {
+    .blueBg {
+      transform: rotate(90deg);
+      width: 70vw;
+      height: 100vw;
+    }
+    .features {
+
+      .simple,
+      .speedy,
+      .easy {
+        display: flex;
+        flex-direction: column;
+
+        .text {
+          order: 2;
+        }
+
+        .container {
+          img {
+            width: 80vw;
+            margin: auto;
+            margin-left: 10vw;
+          }
+
+          .blueBg {
+            transform: rotate(90deg);
+            width: 70vw;
+            height: 100vw;
+            top: -5vw;
+          }
+        }
+      }
+    }
   }
 }
