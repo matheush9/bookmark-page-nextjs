@@ -10,6 +10,7 @@
   .footer {
     display: flex;
     align-items: center;
+    flex-direction: row;
     font-size: 1rem;
     margin-left: 10vw;
 
@@ -21,7 +22,6 @@
         margin-right: 4vw;
       }
     }
-
 
     .navbarDesktop {
       display: flex;
@@ -55,6 +55,16 @@
         filter: invert(69%) sepia(47%) saturate(6186%) hue-rotate(321deg)
           brightness(93%) contrast(113%);
       }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .component {
+    flex-direction: column;
+
+    .footer {
+      flex-direction: column;
     }
   }
 }

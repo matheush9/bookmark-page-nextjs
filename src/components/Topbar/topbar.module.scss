@@ -10,6 +10,10 @@
     justify-content: space-around;
     font-size: 1rem;
 
+    .hamburger, .close {
+      display: none;
+    }
+
   }
   .navbarDesktop {
     display: flex;
@@ -25,7 +29,7 @@
         color: $soft-red;
       }
     }
-    
+
     button {
       background-color: $soft-red;
       font-weight: 500;
@@ -35,6 +39,24 @@
         background-color: white;
         border: 2px solid $soft-red;
         color: $soft-red;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .component {
+    .topbar {
+      .navbarDesktop {
+        display: none;
+      }
+
+      .hamburger {
+        display: block;
+      }
+
+      .close {
+        display: none;
       }
     }
   }

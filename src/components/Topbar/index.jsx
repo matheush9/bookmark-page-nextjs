@@ -8,6 +8,15 @@ export default function Topbar() {
         <div className={styles.logo}>
           <img src="/images/logo-bookmark.svg" alt="" />
         </div>
+        <div className={styles.navIcon}>
+          <div className={styles.hamburger}>
+            <img src="/images/icon-hamburger.svg" alt="" />
+          </div>
+          <div className={styles.close}>
+            <img src="/images/icon-close.svg" alt="" />
+          </div>
+        </div>
+
         <div className={styles.navbarDesktop}>
           <p>FEATURES</p>
           <p>PRICING</p>

@@ -6,7 +6,7 @@
   .downloadText {
     text-align: center;
     margin: 5vh 30vw;
-    
+
     h2 {
       margin: 2vh;
     }
@@ -15,21 +15,22 @@
   .browsersContainer {
     display: flex;
     justify-content: center;
-    
+    flex-direction: row;
+
     .browser {
       display: flex;
       flex-direction: column;
       margin: 2vw;
       align-items: center;
       justify-content: center;
-      box-shadow: $grayish-blue 0px 4px 8px;  
+      box-shadow: $grayish-blue 0px 4px 8px;
       height: 50vh;
       border-radius: 15px;
 
       &:nth-child(2) {
         margin-top: 8vh;
       }
-  
+
       &:nth-child(3) {
         margin-top: 14vh;
       }
@@ -46,8 +47,17 @@
         }
       }
     }
-    .browserLogo, p {
+    .browserLogo,
+    p {
       margin: 2vh 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .component {
+    .browsersContainer {
+      flex-direction: column;
     }
   }
 }

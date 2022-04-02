@@ -5,6 +5,7 @@
   margin-bottom: 10vh;
   display: flex;
   justify-content: space-between;
+  overflow-x: hidden;
 
   .simpleBook {
     padding-left: 8vw;
@@ -13,6 +14,7 @@
 
     button {
       margin-right: 1vw;
+
       &:hover {
         transition: 0.3s;
         background-color: white;
@@ -60,5 +62,32 @@
     right: -15vw;
     z-index: -1;
     top: 20vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .component {
+    flex-direction: column;
+
+    .simpleBook {
+      order: 2;
+    }
+  }
+
+  .container {
+    
+    .heroImg {
+      img {
+        width: 95vw;
+        margin: auto;
+      }
+    }
+    .blueBg {
+      transform: rotate(90deg);
+      width: 50vw;
+      height: 50vh;
+      right: -5vw;
+      top: -4vh;
+    }
   }
 }
