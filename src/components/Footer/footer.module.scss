@@ -62,9 +62,33 @@
 @media (max-width: 600px) {
   .component {
     flex-direction: column;
+    text-align: center;
 
     .footer {
       flex-direction: column;
+      margin: 0;
+
+      .logo {
+        h3 {
+          margin: 2vh 0;
+        }
+      }
+
+      .navbarDesktop {
+        flex-direction: column;
+
+        p {
+          margin: 1vh 0;
+        }
+      }
+    }
+    .socialLogos {
+      justify-content: center;
+      margin: 0;
+
+      img {
+        margin: 2vh;
+      }
     }
   }
 }

@@ -2,10 +2,10 @@
 .component {
   background-color: $soft-blue;
   text-align: center;
-  padding: 8vh 30vw;
+  padding: 8vh 10vw;
   .stayUp {
-
-    h2, p {
+    h2,
+    p {
       color: white;
       margin-bottom: 4vh;
     }
@@ -33,6 +33,23 @@
 
     &::placeholder {
       color: $grayish-blue;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .component {
+    .stayUp {
+      .email {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          width: initial;
+          padding: 4vw;
+          margin-bottom: 2vh;
+        }
+      }
     }
   }
 }
