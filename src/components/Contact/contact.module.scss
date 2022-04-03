@@ -2,7 +2,7 @@
 .component {
   background-color: $soft-blue;
   text-align: center;
-  padding: 8vh 10vw;
+  padding: 8vh 30vw;
   .stayUp {
     h2,
     p {
@@ -39,6 +39,7 @@
 
 @media (max-width: 600px) {
   .component {
+    padding: 8vh 10vw;
     .stayUp {
       .email {
         display: flex;
