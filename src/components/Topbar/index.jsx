@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./topbar.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Topbar() {
   const [stateHamburger, setStateHamburger] = useState(true);
@@ -30,9 +31,21 @@ export default function Topbar() {
         </div>
 
         <div className={styles.navbarDesktop}>
-          <p>FEATURES</p>
-          <p>PRICING</p>
-          <p>CONTACT</p>
+          <p>
+            <Link href="#features">
+              <a>FEATURES</a>
+            </Link>
+          </p>
+          <p>
+            <Link href="#extensions">
+              <a>PRICING</a>
+            </Link>
+          </p>
+          <p>
+            <Link href="#contact">
+              <a>CONTACT</a>
+            </Link>
+          </p>
           <button>LOGIN</button>
         </div>
 

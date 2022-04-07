@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Extension() {
   return (
-    <div className={styles.component}>
+    <div id="extensions" className={styles.component}>
       <div>
         <div className={styles.downloadText}>
           <h2>Download the extension</h2>

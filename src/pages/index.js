@@ -12,7 +12,7 @@ import styles from "../styles/home.module.scss";
 export default function Home() {
   return (
     <div>
-      <Head>Bookmark page</Head>
+      <Head><title>Bookmark page</title></Head>
       <Topbar />
       <Hero />
       <Features />

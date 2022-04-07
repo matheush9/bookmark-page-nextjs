@@ -8,6 +8,10 @@
   box-sizing: 0;
 }
 
+html {
+  scroll-behavior:smooth;
+}
+
 body {
   overflow-x: hidden;
   width: 100vw;
@@ -38,7 +42,7 @@ button {
 
 @media (min-width: 1080px) {
   html {
-    font-size: 110%;
+    font-size: 120%;
   }
 }
 

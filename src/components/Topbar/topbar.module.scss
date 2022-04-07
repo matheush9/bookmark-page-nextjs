@@ -1,4 +1,5 @@
 @import "/src/styles/cores.scss";
+
 .component {
   .logo {
     margin-right: 15vw;
@@ -7,7 +8,7 @@
   .topbar {
     margin-top: 5vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 1rem;
 
     .hamburger, .close {
@@ -21,12 +22,16 @@
 
     p {
       margin-right: 4vw;
-      color: $dark-blue;
       font-size: 0.8rem;
       cursor: pointer;
       &:hover {
         transition: 0.6s;
         color: $soft-red;
+      }
+
+      a {
+        text-decoration: none;
+        color: $dark-blue;
       }
     }
 
@@ -37,7 +42,7 @@
       &:hover {
         transition: 0.3s;
         background-color: white;
-        border: 2px solid $soft-red;
+        border: 3px solid $soft-red;
         color: $soft-red;
       }
     }

@@ -23,7 +23,7 @@ export default function Features() {
   };
 
   return (
-    <div className={styles.component}>
+    <div id="features" className={styles.component}>
       <div className={styles.featuresText}>
         <h2>Features</h2>
         <p>
